@@ -1,0 +1,8 @@
+#!/bin/sh
+
+cd ~/desktop
+openssl aes-256-cbc -d -in encrypted.txt -out toEncrypt.txt
+
+srm -v -z encrypted.txt
+
+done
